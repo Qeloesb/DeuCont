@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    tools:context=".vistas.AddFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tflNombreDeuda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/nombre_de_la_deuda"
+        android:textColorHint="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNombreDeuda"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tflValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/valor_de_la_deuda"
+        android:textColorHint="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etValorTotal"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tflValorCuota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/valor_de_la_cuota"
+        android:textColorHint="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etValorCuota"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tflFechaVen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/fecha_de_vencimiento"
+        android:textColorHint="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etFechaVen"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Guardar"
+        android:layout_marginTop="150dp"
+
+        />
+
+</LinearLayout>
